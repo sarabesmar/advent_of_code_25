@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
     // fgets(buffer(para guardar línea leída), tamaño(cuantos caracteres puede leer), archivo)
     while(fgets(linea, sizeof(linea), archivo) != NULL) { // mientras haya una línea
         
-        if(sscanf(linea, " %c%d", &letra, &numero) == 2) { // sscanf por que lee de un string, no del teclado
+        if(sscanf(linea, " %c%d", &letra, &numero) == 2) { // sscanf por que lee de un string, no del teclado            
             rotacion(letra, numero);
         }
     
